@@ -1,0 +1,361 @@
+@font-face {
+  font-family: 'Selfie';
+  src: url("../fonts/Selfie-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Body';
+  src: url("../fonts/ClashGrotesk-Variable.ttf") format("truetype");
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Center vertically */
+  align-items: center;      /* Center horizontally */
+  min-height: 100vh;        /* Make sure it takes full screen height */
+  text-align: center;
+  padding: 20px;
+}
+/* General Page Setup */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Body';
+  background-color: #ffffff;
+}
+/* Main App Container */
+#root, .App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+  width: 100%;
+}
+
+/* Navigation Bar */
+.navbar {
+  row-gap: 20px;
+  background-color: #ff6600;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Aligns content to the top */
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.filter {
+  padding: 8px;
+  margin: 10px;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+}
+ul {
+  list-style: none; /* Removes bullet points */
+  padding: 0; /* Removes default padding */
+}
+.delete-btn {
+  margin-left: 10px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.delete-btn:hover {
+  background-color: rgb(201, 82, 2);
+}
+
+/* Section Styling */
+.section {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #333;
+}
+.intro-text {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.features {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.features h2 {
+  color: #333;
+}
+
+.features ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.features li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.cta-section {
+  margin-top: 30px;
+}
+
+.explore-button,
+.add-recipe-button {
+  background: #ff6600;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 10px;
+  transition: background 0.3s ease;
+}
+
+.explore-button:hover,
+.add-recipe-button:hover {
+  background: #e55a00;
+}
+.section h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Recipe Form */
+.recipe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.recipe-form input,
+.recipe-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.recipe-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Button */
+.btn-primary {
+  background-color: #ff6600;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #e55b00;
+}
+
+/* Sticky Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  margin-top: auto; /* Pushes it to the bottom */
+}
+.contact{
+  align-items: center;
+  justify-content: flex-start; /* Aligns content to the top */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  text-align: center;
+}
+.heading{
+  font-family: 'Selfie', bold;
+  font-size: 50px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.search{
+  height: 30px;
+  width: 50%;
+  border-radius: 10px;
+  padding: 5px;
+  border:2px solid #333
+}
+.image{
+  width: 800px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  border:2px solid #333
+}
+.text{
+  font-family: 'Body';
+  font-size: 25px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.paragraph{
+  font-family: 'Body';
+  color: #333;
+  margin-bottom: 20px;
+  width: 50%;
+}
+.home-image {
+  width: 100%;      /* Make it full width */
+  max-height: 400px; /* Adjust height */
+  object-fit: cover; /* Crop without stretching */
+  border-radius: 10px; /* Smooth rounded corners */
+  border:4px solid #333
+}
+.text-1{
+  font-family: 'Body';
+  font-size: 25px;
+  color: #333;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  order:2px solid #333;
+}
+/* Adjust for tablets */
+@media (max-width: 1024px) {
+  .image {
+    width: 90%;
+    height: auto;
+  }
+
+  .paragraph {
+    width: 80%;
+    font-size: 18px;
+  }
+}
+
+/* Adjust for mobile screens */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  .heading {
+    font-size: 35px;
+  }
+
+  .search {
+    width: 80%;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .paragraph {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%; /* Make it take full width */
+    text-align: center;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .navbar ul li {
+    width: 100%;
+    padding: 10px;
+  }
+}
+  .features {
+    padding: 10px;
+  }
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbar ul li {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .explore-button, 
+  .add-recipe-button, 
+  .btn-primary {
+    width: 100%;
+  }
+
+  .recipe-form input, 
+  .recipe-form textarea {
+    font-size: 14px;
+  }
+}
