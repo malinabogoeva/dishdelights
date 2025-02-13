@@ -268,3 +268,94 @@ ul {
   border-radius: 10px;
   order:2px solid #333;
 }
+/* Adjust for tablets */
+@media (max-width: 1024px) {
+  .image {
+    width: 90%;
+    height: auto;
+  }
+
+  .paragraph {
+    width: 80%;
+    font-size: 18px;
+  }
+}
+
+/* Adjust for mobile screens */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  .heading {
+    font-size: 35px;
+  }
+
+  .search {
+    width: 80%;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .paragraph {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%; /* Make it take full width */
+    text-align: center;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .navbar ul li {
+    width: 100%;
+    padding: 10px;
+  }
+}
+  .features {
+    padding: 10px;
+  }
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbar ul li {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .explore-button, 
+  .add-recipe-button, 
+  .btn-primary {
+    width: 100%;
+  }
+
+  .recipe-form input, 
+  .recipe-form textarea {
+    font-size: 14px;
+  }
+}
